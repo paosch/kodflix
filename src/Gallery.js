@@ -14,8 +14,6 @@ export default function Gallery(){
         <Show id='goodlife' name='The Good life' image={goodlifeimage}/>
         <Show id='bottom' name='Bottom' image={bottomimage}/>
         <Show id='fawltytowers' name='Fawlty Towers' image={fawltytowersimage}/>
-      </div>
-      <div className='container'>
         <Show id='yesminister' name='Yes, Minister' image={yesministerimage}/>
         <Show id='onlyfools' name='Only Fools and Horses' image={onlyfoolsimage}/>
         <Show id='blackadder' name='Blackadder' image={blackadderimage}/>
