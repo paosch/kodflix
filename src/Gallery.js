@@ -1,5 +1,5 @@
 import React from 'react';
-import Stack from './Stack';
+import Show from './Show';
 import goodlifeimage from './images/goodlife.jpg';
 import bottomimage from './images/bottom.jpg';
 import fawltytowersimage from './images/fawltytowers.jpg';
@@ -11,14 +11,14 @@ export default function Gallery(){
   return (
     <div>
       <div className='container'>
-        <Stack name='The Good life' image={goodlifeimage}/>
-        <Stack name='Bottom' image={bottomimage}/>
-        <Stack name='Fawlty Towers' image={fawltytowersimage}/>
+        <Show name='The Good life' image={goodlifeimage}/>
+        <Show name='Bottom' image={bottomimage}/>
+        <Show name='Fawlty Towers' image={fawltytowersimage}/>
       </div>
       <div className='container'>
-        <Stack name='Yes, Minister' image={yesministerimage}/>
-        <Stack name='Only Fools and Horses' image={onlyfoolsimage}/>
-        <Stack name='Blackadder' image={blackadderimage}/>
+        <Show name='Yes, Minister' image={yesministerimage}/>
+        <Show name='Only Fools and Horses' image={onlyfoolsimage}/>
+        <Show name='Blackadder' image={blackadderimage}/>
       </div>
     </div>
   );
