@@ -1,27 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import getShowsInfo from './getShowsInfo';
 
 
 export default class Details extends React.Component {
   constructor(){
     super();
     this.state = {
-      welcomeMessage: 'Hi, welcome to the details page'
+      show: {}
     };
   }
 
   componentDidMount(){
-    setTimeout(() => {
-      this.setState({
-        welcomeMessage: 'The best is yet to come!'
-      });
-    }, 3000);
+    let showId = this.props.match.params.showId;
+    let show = getShowsInfo()
+      .find((show) => show.id === showId);
+
+    this.setState({ show });
   }
 
   render(){
     return(
       <div>
-        <h1>{this.state.welcomeMessage}</h1>
+        <h1>{this.state.show.name}</h1>
         <Link to='/'>Back to home page</Link>
       </div>
     )
