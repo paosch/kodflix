@@ -3,19 +3,13 @@
 }
 
 .container {
-  /* display: flex;
-  flex-wrap: wrap; */
-  background-color: #E0FFFF;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .item {
-  /* flex: 1;
-  flex-basis: 120px; */
   padding: 30px;
   position: relative;
-  border: 1px solid black;
   overflow: hidden;
 }
 
@@ -35,9 +29,3 @@
   opacity: .6;
   bottom: 0;
 }
-
-/* @media only screen and (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
-} */
